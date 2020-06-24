@@ -1,0 +1,45 @@
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+ 
+  text-align: center;
+  text-decoration: none;
+  
+
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+.
+/* Facebook */
+.fa-facebook {
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+}
+ .fa-map-marker {
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+ 
+}
+
+
+.fa-linkedin {
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: transparent;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Twitter */

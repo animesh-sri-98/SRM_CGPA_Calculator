@@ -1,0 +1,52 @@
+<!DOCTYPE html><html>
+<head>
+<link rel="icon" href="..\srmgpacalculator\assets\favicon-16x16.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href=".\footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="SRM, GPA, srm gpa calculator" name="kewyords">
+<meta content="CGPA calculator designed in accordance with SRM University. This will help you in calculating your total CGPA based on your final grade of the subect and the number of credits of that subject." name="description">
+<title>2013 Regulations CGPA</title>
+ <script type="text/javascript">['https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js','https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js','js/calculation2013.js'].forEach(function(src){var script=document.createElement('script');script.src=src;script.async=false;document.head.appendChild(script);});</script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ </head>
+ <body>
+ <div class="navbar"> 
+ <nav>
+ <div class="nav-wrapper black darken-2 z-depth-2"> 
+ <a href="./index.html" class="brand-logo" style="margin-left:30px">SRM GPA Calculator</a>
+ </div>
+ </nav>
+ </div>
+ <table class="bordered highlight centered z-depth-1" style="margin:0 auto;table-layout:fixed;width:90%;display:table;border-collapse:collapse;margin-top:50px;" id="gpa"><thead><tr><th data-field="number">Number</th><th data-field="sub_code">Subject Code</th><th data-field="credits">Credits</th><th data-field="grade">Grade</th><th data-field="total">Total</th></tr></thead><tfoot><tr><td id="table-grand-total" data-field="total_gpa"></td><td id="credit-grand-total" data-field="total_credits"></td><td id="grade-grand-total" data-field="total_credits"></td></tr></tfoot><tbody id='gpatable'><tr class="calculation visible"><td>1</td><td><div class="row"><div class="input-field col s12"> <input type="text" id="1Code" tabIndex="1"> <label for="1Code">Code</label></div></div></td><td><div class="row"><div class="credit input-field col s12"> <input class="credit" type="text" tabIndex="2" id="1Credits"> <label for="1Credits">Credits</label></div></div></td><td><div class="row"><div class="grade input-field col s12"> <input class="grade" maxlength="1" type="text" tabIndex="3" id="1Grade"> <label for="1Grade">Grade</label></div></div></td><td><div class="row"><div class="row-total input-field col s12"> <input class="row-total" type="text" readonly tabIndex="-1"></div></div></td></tr><tr class="calculation visible"><td>2</td><td><div class="row"><div class="input-field col s12"> <input type="text" id="2Code" tabIndex="4"> <label for="2Code">Code</label></div></div></td><td><div class="row"><div class="credit input-field col s12"> <input class="credit" type="text" tabIndex="5" id="2Credits"> <label for="2Credits">Credits</label></div></div></td><td><div class="row"><div class="grade input-field col s12"> <input class="grade" maxlength="1" type="text" tabIndex="6" id="2Grade"> <label for="2Grade">Grade</label></div></div></td><td><div class="row"><div class="row-total input-field col s12"> <input class="row-total" type="text" readonly tabIndex="-1"></div></div></td></tr><tr class="calculation visible"><td>3</td><td><div class="row"><div class="input-field col s12"> <input type="text" id="3Code" tabIndex="7"> <label for="3Code">Code</label></div></div></td><td><div class="row"><div class="credit input-field col s12"> <input class="credit" type="text" tabIndex="8" id="3Credits"> <label for="3Credits">Credits</label></div></div></td><td><div class="row"><div class="grade input-field col s12"> <input class="grade" maxlength="1" type="text" tabIndex="9" id="3Grade"> <label for="3Grade">Grade</label></div></div></td><td><div class="row"><div class="row-total input-field col s12"> <input class="row-total" type="text" readonly tabIndex="-1"></div></div></td></tr><tr class="calculation visible"><td>4</td><td><div class="row"><div class="input-field col s12"> <input type="text" id="4Code" tabIndex="10"> <label for="4Code">Code</label></div></div></td><td><div class="row"><div class="credit input-field col s12"> <input class="credit" type="text" tabIndex="11" id="4Credits"> <label for="4Credits">Credits</label></div></div></td><td><div class="row"><div class="grade input-field col s12"> <input class="grade" maxlength="1" type="text" tabIndex="12" id="4Grade"> <label for="4Grade">Grade</label></div></div></td><td><div class="row"><div class="row-total input-field col s12"> <input class="row-total" type="text" readonly tabIndex="-1"></div></div></td></tr><tr class="calculation visible"><td>5</td><td><div class="row"><div class="input-field col s12"> <input type="text" id="5Code" tabIndex="13"> <label for="5Code">Code</label></div></div></td><td><div class="row"><div class="credit input-field col s12"> <input class="credit" type="text" tabIndex="14" id="5Credits"> <label for="5Credits">Credits</label></div></div></td><td><div class="row"><div class="grade input-field col s12"> <input class="grade" type="text" tabIndex="15" id="5Grade" maxlength="1"> <label for="5Grade">Grade</label></div></div></td><td><div class="row"><div class="row-total input-field col s12"> <input class="row-total" type="text" readonly tabIndex="-1"></div></div></td></tr></tbody></table><div style="margin:0 auto;table-layout:fixed;width:90%;display:table;border-collapse:collapse;margin-top:30px;margin-bottom:100px"><div id="addRows" style="margin:10px;float:right;"> <button class="z-depth-1 tooltipped btn-floating btn-large waves-effect waves-light black accent-2" id="add_row" data-position="bottom" data-delay="50" data-tooltip="Add Row"> <i class="material-icons">add</i> </button></div><div id="deleteRows" style="margin:10px;float:right;"> <button class="z-depth-1 tooltipped btn-floating btn-large waves-effect waves-light black accent-2" id="delete_row" data-position="bottom" data-delay="50" data-tooltip="Remove Row"> <i class="material-icons">remove</i> </button></div></div> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-72866316-1','auto');ga('send','pageview');</script> 
+ </body>
+ <footer class="page-footer black ">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Aakash Research Labs</h5>
+                <p class="grey-text text-lighten-4">A budding team from SRM-IST which is a remote location for the project by the IIT-B to develop Resourceful Applications.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact Us</h5>
+                <ul>
+                  <li><a href="https://www.facebook.com/srmteamaakash" class="fa fa-facebook"></a></li>
+				                    
+                  <li><a href="https://www.instagram.com/aakashresearchlabs/" class="fa fa-instagram"></a></li>
+                  <li><a href="https://www.linkedin.com/company/aakash-research-labs/" class="fa fa-linkedin"></a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Aakash Research Labs. All Rights Reserved
+            
+            </div>
+          </div>
+        </footer>
+ 
+ </html>
